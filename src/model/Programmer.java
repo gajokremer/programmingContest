@@ -109,8 +109,7 @@ public class Programmer implements Comparable<Programmer> {
 		return p;
 	}
 	
-	@Override
-	public String toString() {
+	public String nodeForm() {
 		
 		String result = "";
 		
@@ -135,5 +134,11 @@ public class Programmer implements Comparable<Programmer> {
 		}
 		
 		return result;
+	}
+	
+	@Override
+	public String toString() {
+		
+		return name + ", " + phone + ", " + address + ", " + email;
 	}
 }
